@@ -18,7 +18,11 @@ private:
 	void beginDraw();
 	void endDraw();
 	sf::RenderWindow* window;
+	sf::Vector2u pos;
 
-	sf::RectangleShape rect;
+	sf::RectangleShape rect, corner;
 	sf::CircleShape circle;
+
+	sf::Text text;
+	sf::Font font;
 };
